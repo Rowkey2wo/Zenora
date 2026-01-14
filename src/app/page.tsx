@@ -10,7 +10,7 @@ export default function Home() {
   // Parallax effect for the subtle background gradient - FIX: Removed extra comma in useTransform call
   const bgY = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-  const cardImages = ["/bathroom3.jpg", "/bedroom2.jpg", "/Living-room.jpg"];
+  const cardImages = ["/bathroom3.jpg", "/bedroom2.jpg", "/living-room.jpg"];
   const cardTitles = ["Bathroom Oasis", "Bedroom Sanctuary", "Living Room Luxury"];
 
   const steps = [
