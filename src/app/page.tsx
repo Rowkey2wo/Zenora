@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { cinzel, playfair, tenor_Sans_Caption, lora } from "@/app/font";
 import { ArrowRight, Star, Leaf, Clock, MapPin, CheckCircle, Calendar, Users, Home as HomeIcon } from 'lucide-react'; // Renamed 'Home' icon to 'HomeIcon'
 
 export default function Home() {
@@ -47,7 +48,7 @@ export default function Home() {
 
       {/* HERO SECTION (High Impact Promotion) */}
       <section className="relative min-h-dvh flex items-center justify-center text-center text-[#efd1a1] overflow-hidden">
-        <div className="absolute h-full w-full bg-black/30 z-10" />
+        <div className="absolute h-full w-full bg-black/10 z-10" />
 
         <motion.div
           initial={{ scale: 1.1, opacity: 0 }}
@@ -67,13 +68,13 @@ export default function Home() {
         >
           <div className="flex flex-col items-center mb-6">
             {/* Make sure you have this logo in your public folder */}
-            <img src="/AAAA.png" alt="Zenora Logo" className="h-50 w-50 filter brightness-110 contrast-125 drop-shadow-white drop-shadow-[0_0_15px_#c59761,0_0_30px_#efd1a1]" />
-            <h1 className="text-7xl md:text-8xl font-serif font-extrabold tracking-widest text-white drop-shadow-white drop-shadow-[0_0_20px_#c59761]">
+            <img src="/oldDullLogo.png" alt="Zenora Logo" className="h-70 w-70 filter drop-shadow-white drop-shadow-[0_0_15px_#c59761,0_0_20px_#c59761]" />
+            <h1 className={`text-7xl md:text-8xl ${tenor_Sans_Caption.className} font-extrabold text-[#131f4a] drop-shadow-white drop-shadow-[0_0_20px_#c59761,0_0_20px_#c59761,0_0_20px_#c59761]`}>
               ZENORA
             </h1>
           </div>
-          <p className="mt-4 text-2xl text-yellow-300/90 font-light italic">
-            Where cleanliness meets calm luxury
+          <p className={`mt-4 text-3xl text-[#131f4a]/90 ${lora.className} font-semibold drop-shadow-white tracking-wider drop-shadow-[0_0_5px_#c59761,0_0_20px_#c59761,0_0_20px_#c59761,0_0_20px_#c59761]`}>
+            When Cleanliness Meets luxury
           </p>
           <div className="mt-12 flex justify-center gap-6">
             <button className="flex items-center gap-3 cursor-pointer rounded-full bg-[#FFF] px-10 py-4 text-lg font-bold text-[#0d1a44] shadow-xl hover:scale-105 hover:bg-[#fcf191] transition duration-300 transform">

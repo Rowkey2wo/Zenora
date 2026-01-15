@@ -9,10 +9,10 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
   const navTitle = ["Home", "About", "Services", "Contact"];
 
   return (
-    <header className="w-full fixed shadow-2xl bg-[rgba(0,0,0,0.6)] z-50">
+    <header className="w-full fixed shadow-2xl bg-[rgba(0,0,0,0.6)] z-50 border-b">
       <div className="relative flex h-14 px-4">
         
-        <img src="/DDDD.png" className="h-15" alt="" />
+        <img src="/oldDullLogo.png" className="h-12 pt-2 drop-shadow-white drop-shadow-[0_0_10px_#c59761]" alt="" />
         <div className="hidden lg:flex w-full justify-end p-3 me-10">
           {navTitle.map((title) => (
             <motion.ul
